@@ -10,9 +10,7 @@ import os
 # Initialize Flask app and configurations
 app = Flask(__name__)
 CORS(app)
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv(
-    'DATABASE_URL', 'mysql+mysqlconnector://root:SydneyARCHTsql1!@localhost/pizza_db'
-)
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv('DATABASE_URL')
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # Database and Marshmallow initialization
