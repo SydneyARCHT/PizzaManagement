@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 // API base URL
-const API_URL = 'http://localhost:5000';
+const API_URL = 'https://pizzamanagement.onrender.com';
 
 // Component for editing an existing pizza
 function EditPizzaForm({ pizza, onCancel, onPizzaUpdated }) {
