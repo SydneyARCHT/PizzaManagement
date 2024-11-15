@@ -20,6 +20,9 @@ class Base(DeclarativeBase):
 db = SQLAlchemy(app, model_class=Base)
 ma = Marshmallow(app)
 
+with app.app_context():
+    db.create_all()
+
 # ====================================== MODELS =============================================
 class Topping(Base):
     __tablename__ = "toppings"
