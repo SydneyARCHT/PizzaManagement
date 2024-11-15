@@ -1,5 +1,12 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
+      {
+        "source": "/toppings",
+        "destination": "https://pizzaapi-fullstack.onrender.com/toppings"
+      },
+      {
+        "source": "/pizzas",
+        "destination": "https://pizzaapi-fullstack.onrender.com/pizzas"
+      }
     ]
   }
